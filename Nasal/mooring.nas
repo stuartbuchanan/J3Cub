@@ -100,13 +100,18 @@ Mooring.setmoorage = func( index, moorage ) {
     print (" LAT ",latitudedeg," LON ",longitudedeg," HEAD ",headingdeg);
 
     # overwrite the coordinates from the original airport
-    me.presets.getChild("airport-id").setValue("");
+    me.presets.getChild("airspeed-kt").setValue(0);
     me.presets.getChild("latitude-deg").setValue(latitudedeg);
     me.presets.getChild("longitude-deg").setValue(longitudedeg);
     me.presets.getChild("heading-deg").setValue(headingdeg);
     me.presets.getChild("roll-deg").setValue(0);
     me.presets.getChild("pitch-deg").setValue(0);
-    me.presets.getChild("airspeed-kt").setValue(0);
+    me.presets.getChild("offset-distance-nm").setValue(0);
+    #glideslop-deg not pre initialized in core
+    setprop("glideslope-deg", 0.0);
+    me.presets.getChild("runway").setValue("");
+    me.presets.getChild("runway-requested").setValue(0);
+    me.presets.getChild("airport-id").setValue("");
     # forces the computation of ground
     me.presets.getChild("altitude-ft").setValue(-9999);
 }
