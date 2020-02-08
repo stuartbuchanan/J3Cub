@@ -13,6 +13,13 @@
             <name>engstart</name>
             <path>Sounds/engstart.wav</path>
             <property>/engines/active-engine/cranking</property>
+            <condition>
+                <!--and>
+                    <property>/engines/active-engine/cranking</property-->
+
+                        <property>/engines/active-engine/running</property>
+                <!--/and-->
+            </condition>
             <volume>
                 <factor>0.7143</factor>
                 <property>/sim/model/j3cub/sound/volume-boost-door</property>
@@ -72,14 +79,17 @@
             <max-dist>200.0</max-dist>
         </crank>
 
-        <engine>
+        <!--engine>
             <name>engine</name>
             <mode>looped</mode>
             <path>Sounds/wasp.wav</path>
             <property>/engines/active-engine/running</property>
+            <condition>
+                <property>/engines/active-engine/running</property>
+            </condition>
             <volume>
                 <property>/engines/active-engine/mp-osi</property>
-                <factor>0.00375</factor>
+                <factor>0.00175</factor>
                 <min>0.15</min>
                 <max>0.5</max>
             </volume>
@@ -90,6 +100,7 @@
                 <max>1.5</max>
             </volume>
             <volume>
+                <factor>0.7143</factor>
                 <property>/sim/model/j3cub/sound/volume-boost-door</property>
             </volume>
             <pitch>
@@ -98,6 +109,39 @@
                 <min>0.005</min>
                 <max>2.0</max>
                 <offset>0.35</offset>
+            </pitch>
+        </engine-->
+
+        <engine>
+            <name>engine</name>
+            <mode>looped</mode>
+            <path>Sounds/idle2.wav</path>
+            <property>/engines/active-engine/running</property>
+            <condition>
+                <property>/engines/active-engine/running</property>
+            </condition>
+            <volume>
+                <property>/engines/active-engine/mp-osi</property>
+                <factor>0.00175</factor>
+                <min>0.15</min>
+                <max>0.5</max>
+            </volume>
+            <volume>
+                <property>/orientation/alpha-deg</property>
+                <type>log</type>
+                <min>1.0</min>
+                <max>1.5</max>
+            </volume>
+            <volume>
+                <factor>0.7143</factor>
+                <property>/sim/model/j3cub/sound/volume-boost-door</property>
+            </volume>
+            <pitch>
+                <property>/engines/active-engine/rpm</property>
+                <factor>0.0001</factor>
+                <!--min>.001</min>
+                <max>2</max>
+                <offset>.35</offset-->
             </pitch>
         </engine>
 
