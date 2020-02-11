@@ -115,7 +115,7 @@
         <engine>
             <name>engine</name>
             <mode>looped</mode>
-            <path>Sounds/idle2.wav</path>
+            <path>Sounds/highrpm.wav</path>
             <property>/engines/active-engine/running</property>
             <condition>
                 <property>/engines/active-engine/running</property>
@@ -138,13 +138,13 @@
             </volume>
             <pitch>
                 <property>/engines/active-engine/rpm</property>
-                <factor>0.0001</factor>
-                <!--min>.001</min>
+                <factor>0.0004</factor>
+                <min>0.002</min>
                 <max>2</max>
-                <offset>.35</offset-->
+                <offset>0.025</offset>
             </pitch>
         </engine>
-
+ 
         <rumble>
             <name>rumble</name>
             <mode>looped</mode>
