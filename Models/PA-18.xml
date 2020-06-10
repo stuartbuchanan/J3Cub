@@ -740,6 +740,8 @@
         <object-name>antenna_vor</object-name>
         <object-name>antenna_vhf</object-name>
         <object-name>antenna_elt_p18</object-name>
+        <object-name>wing_l_interior_p18</object-name>
+        <object-name>wing_r_interior_p18</object-name>
         <condition>
           <or>
               <property>sim/model/j3cub/pa-18</property>

@@ -60,8 +60,6 @@
         <object-name>wheel_strut_link_r</object-name>
         <object-name>wing_r</object-name>
         <object-name>wing_l</object-name>
-        <object-name>wing_r_interior</object-name>
-        <object-name>wing_l_interior</object-name>
         <object-name>brake_front_l</object-name>
         <object-name>brake_front_r</object-name>
         <object-name>rudderpedal_l</object-name>

@@ -115,7 +115,10 @@
         <engine>
             <name>engine</name>
             <mode>looped</mode>
+            <!--path>Sounds/hi.wav</path>
             <path>Sounds/highrpm.wav</path>
+            <path>Sounds/mid.wav</path-->
+            <path>Sounds/highrpm1.wav</path>
             <property>/engines/active-engine/running</property>
             <condition>
                 <property>/engines/active-engine/running</property>
@@ -140,6 +143,8 @@
                 <property>/engines/active-engine/rpm</property>
                 <factor>0.0004</factor>
                 <min>0.002</min>
+                <!--factor>0.00038</factor>
+                <min>0.0015</min-->
                 <max>2</max>
                 <offset>0.025</offset>
             </pitch>

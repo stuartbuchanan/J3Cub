@@ -3,7 +3,7 @@
 <PropertyList>
   <name>Aircraft/J3Cub/Models/Effects/interior/j3cub-interior</name>
   <!--inherits-from>Effects/model-interior</inherits-from-->
-  <inherits-from>Effects/model-default</inherits-from>
+  <inherits-from>Effects/model-combined</inherits-from>
   <parameters>
 	<texture n="4">
 	  <type>cubemap</type>
