@@ -1917,9 +1917,7 @@
             </direction>
         </force>
 
-        <!--
-                    Tiedowns use body frame (x positive forward, y positive right, z positive down)
-                    -->
+        <!-- Tiedowns use body frame (x positive forward, y positive right, z positive down) -->
                 
         <force name="tiedown-left" frame="BODY">
             <location unit="M">
@@ -1993,6 +1991,19 @@
                 <y> 0.0 </y>
                 <z> 0.0 </z>
             </direction>
+        </force>
+
+        <force name="aerotow" frame="BODY" unit="LBS">
+            <location unit="M">
+               <x>5.15</x>
+               <y>0.0</y>
+               <z>0.0</z>
+            </location>
+            <direction>
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>0.0</z>
+             </direction>
         </force>
     </external_reactions>
 
